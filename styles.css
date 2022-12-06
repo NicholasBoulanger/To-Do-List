@@ -1,0 +1,100 @@
+*{
+    /*
+    border-style: dotted;
+    border-color: red;
+    border-width: 2px;
+    */
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#title{
+    height: 5vh;
+    text-align: center;
+    color: #202123;
+    padding: 20px;
+    background: linear-gradient(45deg, #3F51B5, #ae8ab5);
+    background-size: 200% 100%;
+    animation: gradient 15s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+   /* Specify the starting state for the gradient */
+   0% {
+    background-position: 0%
+  }
+  /* Specify the ending state for the gradient */
+  100% {
+    background-position: 100%
+  }
+}
+
+
+#list{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #444654;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    color: #cdcfd0;
+}
+li{
+    padding-top: 20px;
+}
+
+ul{
+    padding-top: 0px;
+}
+
+button{
+    padding: 2px;
+    margin: 5px;
+}
+
+#submitButton{
+    padding: 2px;
+    margin: 5px;
+    background-image: linear-gradient(to right, #3F51B5, #ae8ab5);
+    filter: blur(0px);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+#submitButton:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+#input{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    background-color: #40414f;
+    color: white;
+}
+
+#trunk{
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    background-color: #202123;
+    padding: 20px;
+    box-shadow: 0 -20px 35px 10px rgba(0, 0, 0, 0.2);
+}
+
+
